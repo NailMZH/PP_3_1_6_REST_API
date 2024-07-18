@@ -43,11 +43,6 @@ public class RestTemplateController {
         joinAnswer.append(response.getBody());
     }
 
-/*    public  void  deleteUser(HttpEntity<User> entity) {
-        ResponseEntity<String> response = restTemplate.exchange(restURL+"/3", HttpMethod.DELETE, entity, String.class);
-        joinAnswer.append(response.getBody());
-    }*/
-
 
 public void deleteUser(HttpEntity<User> entity) {
     User user = entity.getBody();
